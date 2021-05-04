@@ -1,0 +1,4 @@
+.tmux/plugins/tpm/
+.config/nvim/plugged/
+.netrwhist
+.DS_Store
