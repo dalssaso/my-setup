@@ -1,0 +1,57 @@
+{
+    "git.addGBlameToBufferVar": true,
+    "git.enableGutters": true,
+    "cSpell.language": "en,pt_BR",
+    "cSpellExt.enableDictionaries": [
+        "pt_BR"
+    ],
+    "cSpell.enabledLanguageIds": [
+        "asciidoc",
+        "git-commit",
+        "go",
+        "handlebars",
+        "haskell",
+        "html",
+        "jade",
+        "java",
+        "javascript",
+        "javascriptreact",
+        "json",
+        "jsonc",
+        "latex",
+        "less",
+        "markdown",
+        "php",
+        "plaintext",
+        "python",
+        "pug",
+        "restructuredtext",
+        "rust",
+        "scala",
+        "scss",
+        "text",
+        "typescript",
+        "typescriptreact",
+        "yaml",
+        "yml"
+    ],
+    "cSpell.flagWords": [
+        "eht",
+        "hte"
+    ],
+    "yaml.schemaStore.enable": true,
+
+    "languageserver": {
+        "terraform": {
+            "command": "terraform-ls",
+            "args": ["serve"],
+            "filetypes": [
+                "terraform",
+                "tf"
+            ],
+            "initializationOptions": {},
+            "settings": {}
+
+        }
+    }
+}
