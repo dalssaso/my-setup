@@ -53,10 +53,16 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'}
     Plug 'tpope/vim-markdown', {'for': 'markdown'}
 
+    " Git
+    Plug 'rhysd/committia.vim'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'junegunn/gv.vim'
+    Plug 'tpope/vim-fugitive'
+
+
     " Utilities
     Plug 'godlygeek/tabular'
     Plug 'Shougo/vimproc.vim'
-    Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-surround'
     Plug 'tpope/vim-endwise'
     Plug 'tpope/vim-commentary'
@@ -155,7 +161,6 @@ call plug#begin('~/.config/nvim/plugged')
     let g:fzf_preview_window = ['right:50%:hidden', '?']
     let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.5, 'highlight': 'Comment' } }
 
-    Plug 'tpope/vim-fugitive'
 
 call plug#end()
 
@@ -414,3 +419,6 @@ cnoreabbrev WQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Qall qall
+
+" Italics
+highlight Comment cterm=italic
