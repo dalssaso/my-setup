@@ -55,9 +55,13 @@ call plug#begin('~/.config/nvim/plugged')
 
     " Git
     Plug 'rhysd/committia.vim'
+    let g:committia_open_only_vim_starting = 1
+
     Plug 'airblade/vim-gitgutter'
     Plug 'junegunn/gv.vim'
-    Plug 'tpope/vim-fugitive'
+    " Plug 'tpope/vim-fugitive'
+    Plug 'lambdalisue/gina.vim'
+    Plug 'jreybert/vimagit'
 
 
     " Utilities
