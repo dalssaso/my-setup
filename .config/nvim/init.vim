@@ -52,6 +52,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'kannokanno/previm', {'for': 'markdown'}
     Plug 'mzlogin/vim-markdown-toc', {'for': 'markdown'}
     Plug 'tpope/vim-markdown', {'for': 'markdown'}
+    let g:markdown_syntax_conceal = 0
 
     " Git
     Plug 'rhysd/committia.vim'
