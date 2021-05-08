@@ -18,7 +18,7 @@ endif
 
 let g:loaded_ruby_provider = 0
 let g:loaded_python_provider = 0
-let g:python3_host_prog = '/Users/dalssaso/.ve/neovim/bin/python'
+let g:python3_host_prog = '$HOME/.ve/neovim/bin/python'
 
 call plug#begin('~/.config/nvim/plugged')
 
@@ -166,6 +166,33 @@ call plug#begin('~/.config/nvim/plugged')
     let g:fzf_preview_window = ['right:50%:hidden', '?']
     let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.5, 'highlight': 'Comment' } }
 
+    Plug 'edkolev/tmuxline.vim'
+    let g:tmuxline_status_justify = 'centre'
+    if has('macunix')
+        let g:tmuxline_preset = {
+              \'a'    : ' #S',
+              \'b'    : ' #(whoami)',
+              \'win'  : '#I #W',
+              \'cwin' : '#I #W',
+              \'x'    : [' #(osascript $HOME/.dotfiles/scripts/tunes.scpt)',],
+              \'y'    : ['%R', ' %d/%m/%y',],
+              \'z'    : ' #H'}
+    else
+        let g:tmuxline_preset = {
+              \'a'    : ' #S',
+              \'b'    : ' #(whoami)',
+              \'win'  : '#I #W',
+              \'cwin' : '#I #W',
+              \'x'    : [' #(spotifycli --status-short)',],
+              \'y'    : ['%R', ' %d/%m/%y',],
+              \'z'    : ' #H'}
+    endif
+    let g:tmuxline_separators = {
+             \ 'left' : '',
+             \ 'left_alt' : '',
+             \ 'right' : '',
+             \ 'right_alt' : '',
+             \ 'space' : ' '}
 
 call plug#end()
 

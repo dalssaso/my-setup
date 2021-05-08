@@ -1,0 +1,21 @@
+# This tmux statusbar config was created by tmuxline.vim
+# on Thu, 06 May 2021
+
+set -g status-justify "centre"
+set -g status "on"
+set -g status-left-style "none"
+set -g message-command-style "fg=#bdae93,bg=#504945"
+set -g status-right-style "none"
+set -g pane-active-border-style "fg=#bdae93"
+set -g status-style "none,bg=#3c3836"
+set -g message-style "fg=#bdae93,bg=#504945"
+set -g pane-border-style "fg=#504945"
+set -g status-right-length "100"
+set -g status-left-length "100"
+setw -g window-status-activity-style "underscore,fg=#bdae93,bg=#3c3836"
+setw -g window-status-separator ""
+setw -g window-status-style "none,fg=#bdae93,bg=#3c3836"
+set -g status-left "#[fg=#3c3836,bg=#bdae93]  #S #[fg=#bdae93,bg=#504945,nobold,nounderscore,noitalics]\uE0B4#[fg=#bdae93,bg=#504945]  #(whoami) #[fg=#504945,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B4"
+set -g status-right "#[fg=#3c3836,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B6#[fg=#bdae93,bg=#3c3836] %a  #(osascript $HOME/.dotfiles/scripts/tunes.scpt) #[fg=#504945,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B6#[fg=#bdae93,bg=#504945] %R  %d/%m/%y #[fg=#bdae93,bg=#504945,nobold,nounderscore,noitalics]\uE0B6#[fg=#3c3836,bg=#bdae93]  #H "
+setw -g window-status-format "#[fg=#3c3836,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B4#[default] #I #W #[fg=#3c3836,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B4"
+setw -g window-status-current-format "#[fg=#3c3836,bg=#504945,nobold,nounderscore,noitalics]\uE0B4#[fg=#bdae93,bg=#504945] #I #W #[fg=#504945,bg=#3c3836,nobold,nounderscore,noitalics]\uE0B4"
