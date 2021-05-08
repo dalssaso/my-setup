@@ -92,21 +92,20 @@ call plug#begin('~/.config/nvim/plugged')
     " coc
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     let g:coc_global_extensions = [
-        \ 'coc-json',
-        \ 'coc-git',
-        \ 'coc-yaml',
+        \ 'coc-cspell-dicts',
         \ 'coc-elixir',
+        \ 'coc-git',
+        \ 'coc-jedi',
+        \ 'coc-json',
+        \ 'coc-markdownlint',
+        \ 'coc-marketplace',
         \ 'coc-prettier',
         \ 'coc-sh',
-        \ 'coc-jedi',
-        \ 'coc-spell-checker',
-        \ 'coc-cspell-dicts',
-        \ 'coc-prettier',
-        \ 'coc-yank',
-        \ 'coc-marketplace',
-        \ 'coc-sql',
         \ 'coc-snippets',
-        \ 'coc-markdownlint',
+        \ 'coc-spell-checker',
+        \ 'coc-sql',
+        \ 'coc-yaml',
+        \ 'coc-yank',
         \ ]
 
     Plug 'junegunn/fzf.vim'
