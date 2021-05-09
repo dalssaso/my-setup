@@ -95,6 +95,7 @@ call plug#begin('~/.config/nvim/plugged')
         \ 'coc-cspell-dicts',
         \ 'coc-elixir',
         \ 'coc-git',
+        \ 'coc-go',
         \ 'coc-jedi',
         \ 'coc-json',
         \ 'coc-markdownlint',
@@ -193,6 +194,7 @@ call plug#begin('~/.config/nvim/plugged')
              \ 'right_alt' : '',
              \ 'space' : ' '}
 
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 set encoding=utf-8
